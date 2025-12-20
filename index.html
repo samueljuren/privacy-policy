@@ -1,1 +1,179 @@
-<h1>Teste</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | Ordem Simples</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-main: #1e293b;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo-placeholder {
+            background: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 0 auto 16px;
+        }
+
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; color: var(--text-main); }
+        .last-update { color: var(--text-light); font-size: 0.9rem; }
+
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 24px;
+            color: var(--text-main);
+        }
+
+        p, li { color: #475569; font-size: 1.05rem; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
+        /* Badge para as camadas técnicas que você mencionou */
+        .tech-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #3b82f6;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+
+        .highlight-box {
+            background: #f1f5f9;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-bottom: 48px;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .content-card { padding: 24px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-placeholder">OS</div>
+        <h1>Política de Privacidade</h1>
+        <p class="last-update">Aplicativo <strong>Ordem Simples</strong> • Última Atualização: Dezembro de 2025</p>
+    </header>
+
+    <div class="content-card">
+        <p>Esta Política de Privacidade descreve como o aplicativo móvel <strong>Ordem Simples</strong> (o "Aplicativo") coleta, usa, armazena e protege as suas informações. Ao utilizar nosso Aplicativo, você concorda com a coleta e uso de informações de acordo com esta Política.</p>
+
+        <h2>1. Coleta e Uso de Informações</h2>
+        <p>Coletamos diferentes tipos de informações para diversos propósitos, com o objetivo de fornecer e melhorar o nosso Serviço.</p>
+
+        <h3>1.1 Dados Pessoais Coletados <span class="tech-badge">Camada Domain</span></h3>
+        <ul>
+            <li><strong>Informações de Contato e Autenticação:</strong> E-mail (utilizado para criação de conta, login e fluxo de Recuperação de Senha) e Senha (armazenada via Hash seguro).</li>
+            <li><strong>Informações de Gestão de Ordens:</strong> Dados inseridos no gerenciamento de ordens de serviço (descrições, datas, status e nomes de clientes).</li>
+        </ul>
+
+        <h3>1.2 Dados de Uso e Diagnóstico <span class="tech-badge">Shared/Analytics</span></h3>
+        <p>Logs do Dispositivo: Endereço IP, tipo de dispositivo, sistema operacional, tempo gasto nas páginas e diagnósticos de falha.</p>
+
+        <h2>2. Uso dos Dados <span class="tech-badge">Core/Use Cases</span></h2>
+        <div class="highlight-box">
+            Os dados coletados são usados para os seguintes propósitos:
+            <ul>
+                <li>Manter e fornecer o Serviço e gestão de ordens.</li>
+                <li>Funcionalidade de Recuperação de Senha via e-mail.</li>
+                <li>Segurança e proteção contra fraudes.</li>
+            </ul>
+        </div>
+
+        <h2>3. Armazenamento e Segurança <span class="tech-badge">Camada Data</span></h2>
+        <p>A segurança dos seus dados é fundamental. Implementamos medidas robustas:</p>
+        <ul>
+            <li><strong>Criptografia:</strong> Senhas em hashes unidirecionais.</li>
+            <li><strong>Armazenamento Local (LocalStorage):</strong> Dados sensíveis temporários são criptografados no dispositivo e descartados após o uso.</li>
+            <li><strong>Mínimo Privilégio:</strong> Acesso restrito apenas aos Use Cases necessários.</li>
+        </ul>
+
+        <h2>4. Transferência de Dados</h2>
+        <p>Não vendemos ou alugamos suas informações. Compartilhamos dados apenas com provedores de serviço essenciais (ex: envio de e-mails transacionais) ou por obrigação legal.</p>
+
+        <h2>5. Seus Direitos</h2>
+        <p>Você pode solicitar o acesso, correção ou exclusão de seus dados (direito ao esquecimento) a qualquer momento, respeitando as obrigações legais de retenção.</p>
+
+        <h2>6. Contato e Alterações</h2>
+        <p>Podemos atualizar esta política ocasionalmente. Notificaremos você sobre mudanças via App.</p>
+        <p>Dúvidas? Entre em contato: <strong>suporte@ordemsimples.com.br</strong></p>
+    </div>
+
+    <footer>
+        &copy; 2025 Ordem Simples - Todos os direitos reservados.
+    </footer>
+</div>
+
+</body>
+</html>
