@@ -82,7 +82,6 @@
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
 
-        /* Badge para as camadas técnicas que você mencionou */
         .tech-badge {
             display: inline-block;
             background: #eff6ff;
@@ -141,6 +140,13 @@
         <h3>1.2 Dados de Uso e Diagnóstico <span class="tech-badge">Shared/Analytics</span></h3>
         <p>Logs do Dispositivo: Endereço IP, tipo de dispositivo, sistema operacional, tempo gasto nas páginas e diagnósticos de falha.</p>
 
+        <h3>1.3 Permissões de Acesso a Fotos e Vídeos <span class="tech-badge">Device/Storage</span></h3>
+        <p>O Aplicativo pode solicitar permissão para acessar a galeria de fotos e vídeos do seu dispositivo. </p>
+        <ul>
+            <li><strong>Finalidade:</strong> Informamos que o uso desta permissão <strong>não possui relação direta com a funcionalidade principal</strong> (gestão de ordens de serviço) do aplicativo, sendo uma funcionalidade opcional para personalização ou anexos complementares por escolha do usuário.</li>
+            <li><strong>Controle:</strong> Você pode negar ou revogar esta permissão a qualquer momento através das configurações do seu sistema operacional, sem prejuízo às funções essenciais do Ordem Simples.</li>
+        </ul>
+
         <h2>2. Uso dos Dados <span class="tech-badge">Core/Use Cases</span></h2>
         <div class="highlight-box">
             Os dados coletados são usados para os seguintes propósitos:
@@ -155,6 +161,7 @@
         <p>A segurança dos seus dados é fundamental. Implementamos medidas robustas:</p>
         <ul>
             <li><strong>Criptografia:</strong> Senhas em hashes unidirecionais.</li>
+            <li><strong>Arquivos de Mídia:</strong> Caso o usuário opte por carregar fotos/vídeos, estes são tratados sob os mesmos protocolos de segurança e privacidade dos demais dados.</li>
             <li><strong>Armazenamento Local (LocalStorage):</strong> Dados sensíveis temporários são criptografados no dispositivo e descartados após o uso.</li>
             <li><strong>Mínimo Privilégio:</strong> Acesso restrito apenas aos Use Cases necessários.</li>
         </ul>
